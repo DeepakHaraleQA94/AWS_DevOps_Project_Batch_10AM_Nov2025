@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class ValidateCssPage {
 
 //	class = collection of data member and member functions
@@ -28,6 +30,8 @@ public class ValidateCssPage {
 	
 		String title = driver.getTitle();
 		System.out.println(title);
+		
+		System.out.println("Hellooooo");
 		
 		if(title.equals("CSS Tutorial")) {
 		System.out.println("TC passed");	
